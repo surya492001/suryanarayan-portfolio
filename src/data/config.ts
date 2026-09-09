@@ -19,8 +19,8 @@ export const hero = {
   headline: 'Full-stack developer & business analyst building *data-driven* solutions.',
   intro: `I build .NET applications end to end, from ASP.NET Core and SQL Server through to
     production support. Deputy Manager IT in the Business Solutions Group at HDFC Bank.
-    Separately, I have trained as a business analyst: an MBA in Business Analytics from BITS
-    Pilani and a Microsoft PL-300, covering requirements, process analysis and Power BI.`,
+    I have also trained as a business analyst: an MBA in Business Analytics from BITS Pilani
+    and a Microsoft PL-300, covering requirements, process analysis and Power BI.`,
   facts: [
     { label: 'Based in', value: 'Mumbai, India' },
     { label: 'Experience', value: '3 years' },
