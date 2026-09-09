@@ -16,7 +16,7 @@ export const site = {
 
 export const hero = {
   // The word wrapped in *asterisks* is rendered in italic accent type.
-  headline: 'Full-stack developer & business analyst building *data-driven* solutions in banking.',
+  headline: 'Full-stack developer & business analyst building *data-driven* solutions.',
   intro: `I gather the requirements, build the thing, and prove it worked. Currently Deputy Manager IT
     in the Business Solutions Group at HDFC Bank, working where .NET engineering meets business
     analysis and BI.`,
