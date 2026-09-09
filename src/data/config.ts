@@ -48,8 +48,8 @@ export const experience = [
     company: 'HDFC Bank',
     role: 'Deputy Manager IT, Business Solutions Group',
     location: 'Mumbai, India',
-    lead: `Full-stack developer and business analyst on three enterprise banking applications, from
-      requirements through to production support.`,
+    lead: `Full-stack developer on three enterprise banking applications, from requirements through
+      to production support.`,
     points: [
       'Led the migration of legacy .NET Framework applications to ASP.NET Core, re-architecting the codebase and folding budgeting, compliance, procurement and reporting into one unified workflow.',
       'Designed RESTful APIs, role-based access modules and optimised SQL Server stored procedures supporting high-volume approval workflows.',
