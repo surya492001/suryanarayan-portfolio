@@ -8,8 +8,8 @@ interface Props {
 }
 
 const {
-  title = `${site.name} — ${site.role}`,
-  description = site.headline,
+  title = `${site.name} | ${site.role}`,
+  description = 'Full-stack developer and business analyst building data-driven solutions in banking. ASP.NET Core, SQL Server, Power BI and Microsoft Fabric.',
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url).toString();
@@ -19,12 +19,17 @@ const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: site.name,
-  jobTitle: 'Deputy Manager — Business Solutions Group',
+  jobTitle: 'Deputy Manager IT, Business Solutions Group',
   url: site.url,
-  description: site.headline,
+  description,
+  address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' },
   sameAs: [site.linkedin, site.github],
   worksFor: { '@type': 'Organization', name: 'HDFC Bank' },
-  alumniOf: { '@type': 'CollegeOrUniversity', name: 'BITS Pilani' },
+  alumniOf: [
+    { '@type': 'CollegeOrUniversity', name: 'BITS Pilani' },
+    { '@type': 'CollegeOrUniversity', name: 'NMIMS Mumbai' },
+  ],
+  knowsAbout: ['ASP.NET Core', 'C#', 'SQL Server', 'Power BI', 'Microsoft Fabric', 'Business analysis'],
 };
 ---
 
@@ -55,7 +60,7 @@ const personSchema = {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500&display=swap"
     />
 
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
@@ -63,13 +68,12 @@ const personSchema = {
   <body>
     <a
       href="#main"
-      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-accent focus:text-ink focus:px-4 focus:py-2"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-fg focus:px-4 focus:py-2 focus:text-bg"
     >
       Skip to content
     </a>
     <slot />
     <script is:inline>
-      // Reveal-on-scroll. Content is visible by default if this never runs.
       document.addEventListener('DOMContentLoaded', () => {
         const els = document.querySelectorAll('.reveal');
         if (!('IntersectionObserver' in window)) {
@@ -85,7 +89,7 @@ const personSchema = {
               }
             });
           },
-          { rootMargin: '0px 0px -8% 0px', threshold: 0.05 }
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.04 }
         );
         els.forEach((el) => io.observe(el));
       });
