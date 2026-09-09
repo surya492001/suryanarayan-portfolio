@@ -18,9 +18,9 @@ export const hero = {
   // The word wrapped in *asterisks* is rendered in italic accent type.
   headline: 'Full-stack developer & business analyst building *data-driven* solutions.',
   intro: `I build .NET applications end to end, from ASP.NET Core and SQL Server through to
-    production support. Then I do the other half: gather the requirements, write the BRDs, and
-    prove in Power BI that it worked. Deputy Manager IT in the Business Solutions Group at
-    HDFC Bank.`,
+    production support. Deputy Manager IT in the Business Solutions Group at HDFC Bank.
+    Separately, I have trained as a business analyst: an MBA in Business Analytics from BITS
+    Pilani and a Microsoft PL-300, covering requirements, process analysis and Power BI.`,
   facts: [
     { label: 'Based in', value: 'Mumbai, India' },
     { label: 'Experience', value: '3 years' },
