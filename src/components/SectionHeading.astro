@@ -7,6 +7,8 @@ const { num, title } = Astro.props;
 ---
 
 <div class="mb-[clamp(32px,5vw,56px)] flex items-baseline gap-4">
-  <span class="text-xs tracking-[0.12em] text-accent-light">{num}</span>
-  <h2 class="font-serif text-[clamp(28px,4vw,44px)] font-normal tracking-[-0.01em]">{title}</h2>
+  <span class="text-[13px] font-medium tracking-[0.12em] text-accent-light">{num}</span>
+  <h2 class="font-serif text-[clamp(30px,4vw,46px)] font-normal tracking-[-0.01em] text-fg">
+    {title}
+  </h2>
 </div>
