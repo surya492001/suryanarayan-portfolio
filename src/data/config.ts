@@ -17,13 +17,12 @@ export const site = {
 export const hero = {
   // The word wrapped in *asterisks* is rendered in italic accent type.
   headline: 'Full-stack developer & business analyst building *data-driven* solutions.',
-  intro: `I gather the requirements, build the thing, and prove it worked. Currently Deputy Manager IT
-    in the Business Solutions Group at HDFC Bank, working where .NET engineering meets business
-    analysis and BI.`,
+  intro: `I gather the requirements, build the thing, and prove it worked. Deputy Manager IT in the
+    Business Solutions Group at HDFC Bank, working where .NET engineering meets business analysis
+    and BI.`,
   facts: [
     { label: 'Based in', value: 'Mumbai, India' },
     { label: 'Experience', value: '3 years' },
-    { label: 'Focus', value: 'BFSI · Data' },
     { label: 'Certified', value: 'Microsoft PL-300' },
   ],
 };
@@ -44,7 +43,7 @@ export const marquee = [
 
 export const experience = [
   {
-    period: 'July 2023 to Present',
+    period: 'July 2023 to September 2026',
     company: 'HDFC Bank',
     role: 'Deputy Manager IT, Business Solutions Group',
     location: 'Mumbai, India',
