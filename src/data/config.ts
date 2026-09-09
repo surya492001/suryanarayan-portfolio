@@ -11,7 +11,7 @@ export const site = {
   linkedin: 'https://www.linkedin.com/in/suryanarayan-pillai-7b66a4194/',
   github: 'https://github.com/surya492001',
   // TODO: free key from https://web3forms.com (enter your email, it is mailed to you)
-  web3formsKey: 'YOUR-WEB3FORMS-ACCESS-KEY',
+  web3formsKey: '86572421-c21a-48ef-8baf-4455c1d24e37',
 };
 
 export const hero = {
