@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://suryanarayan.pages.dev/sitemap-index.xml
+Sitemap: https://suryanarayan-portfolio.surya492001.workers.dev/sitemap-index.xml

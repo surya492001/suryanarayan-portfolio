@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  // Change this once you know your final Cloudflare Pages URL (or custom domain).
-  site: 'https://suryanarayan.pages.dev',
+  // Change this if you move to a custom domain.
+  site: 'https://suryanarayan-portfolio.surya492001.workers.dev',
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },
 });

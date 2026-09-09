@@ -7,7 +7,7 @@ export const site = {
   shortName: 'Suryanarayan',
   role: 'Full-stack developer & business analyst',
   availability: 'Open to opportunities',
-  url: 'https://suryanarayan.pages.dev', // TODO: update after your first deploy
+  url: 'https://suryanarayan-portfolio.surya492001.workers.dev', // Live on Cloudflare Workers.
   linkedin: 'https://www.linkedin.com/in/suryanarayan-pillai-7b66a4194/',
   github: 'https://github.com/surya492001',
   // TODO: free key from https://web3forms.com (enter your email, it is mailed to you)
