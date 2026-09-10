@@ -17,7 +17,7 @@ export const site = {
 export const hero = {
   // The word wrapped in *asterisks* is rendered in italic accent type.
   headline: 'Full-stack developer & business analyst building *data-driven* solutions.',
-  intro: `I build .NET applications end to end, from ASP.NET Core and SQL Server through to
+  intro: `I have built .NET applications end to end, from ASP.NET Core and SQL Server through to
     production support. Deputy Manager IT in the Business Solutions Group at HDFC Bank.
     I have also trained as a business analyst: an MBA in Business Analytics from BITS Pilani
     and a Microsoft PL-300, covering requirements, process analysis and Power BI.`,
@@ -55,7 +55,7 @@ export const experience = [
       'Designed RESTful APIs, role-based access modules and optimised SQL Server stored procedures supporting high-volume approval workflows.',
       'Delivered 60+ production deployments, owning development, UAT support, defect resolution, release management and post-production support.',
       'Built 12+ automated notification schedulers and workflow monitoring services, removing manual follow-up for operations teams.',
-      'Remediated SAST security findings including stored XSS and path traversal (CWE-22) with input validation, output encoding and secure file-handling patterns.',
+      'Remediated SAST security findings including stored XSS and path traversal with input validation, output encoding and secure file-handling patterns.',
       'Gathered requirements directly from business stakeholders, authored BRDs and FRDs, and translated them into technical designs.',
     ],
   },
@@ -104,9 +104,9 @@ export const projects = [
     problem:
       'Banking approval workflows were breaching SLAs, but breaches were only visible after the fact, so escalation was always reactive.',
     approach:
-      'Analysed real banking workflow data to measure turnaround time and locate bottlenecks by approval stage, then trained a Decision Tree classifier to flag cases likely to breach before they did.',
+      'Analysed banking workflow data to measure turnaround time and locate bottlenecks by approval stage, then trained a Decision Tree classifier to flag cases likely to breach before they did.',
     impact:
-      '97% accuracy on breach prediction, delivered alongside a Power BI dashboard for SLA monitoring and process-mining recommendations for targeted fixes.',
+      '97.5% accuracy on breach prediction, delivered alongside a Power BI dashboard for SLA monitoring and process-mining recommendations for targeted fixes.',
   },
   {
     title: 'Retail data pipeline on Microsoft Fabric',
@@ -146,12 +146,12 @@ export const skills = [
   },
   {
     group: 'Practices & tools',
-    items: ['Agile / Scrum', 'N-tier architecture', 'JWT & RBAC', 'Secure coding (SAST)', 'Git / GitHub', 'Jira', 'Confluence', 'Postman'],
+    items: ['Agile / Scrum', 'N-tier architecture', 'Secure coding (SAST)', 'Git / GitHub', 'Jira', 'Confluence', 'Postman'],
   },
 ];
 
 export const publication = {
-  text: 'Pillai, S. "Probability of Heart Disease using Various Machine Learning Algorithms", 2023 International Conference on Advanced Computing Technologies and Applications (ICACTA), Mumbai, India.',
+  text: 'Probability of Heart Disease using Various Machine Learning Algorithms, 2023 International Conference on Advanced Computing Technologies and Applications (ICACTA), Mumbai, India.',
 };
 
 // Drop the PDFs into public/ with exactly these filenames.
