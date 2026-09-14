@@ -154,6 +154,10 @@ export const publication = {
   text: 'Probability of Heart Disease using Various Machine Learning Algorithms, 2023 International Conference on Advanced Computing Technologies and Applications (ICACTA), Mumbai, India.',
 };
 
+// Resume section switch. false hides the section and its header link;
+// set it back to true to show them again.
+export const showResumes = false;
+
 // Drop the PDFs into public/ with exactly these filenames.
 export const resumes = [
   {

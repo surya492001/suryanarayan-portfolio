@@ -12,13 +12,14 @@ import {
   skills,
   publication,
   resumes,
+  showResumes,
 } from '../data/config';
 
 const nav = [
   { href: '#work', label: 'Work' },
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
-  { href: '#resume', label: 'Resume' },
+  ...(showResumes ? [{ href: '#resume', label: 'Resume' }] : []),
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -301,7 +302,8 @@ const labelClass = 'text-[12px] font-medium tracking-[0.12em] text-muted upperca
         </div>
       </section>
 
-      <!-- Resume -->
+      <!-- Resume (toggled by showResumes in config.ts) -->
+      {showResumes && (
       <section id="resume" class="scroll-mt-24 pt-[clamp(72px,11vw,130px)]">
         <SectionHeading num="04" title="Resume" />
         <div class="reveal grid gap-5 sm:grid-cols-2">
@@ -324,12 +326,13 @@ const labelClass = 'text-[12px] font-medium tracking-[0.12em] text-muted upperca
           }
         </div>
       </section>
+      )}
 
       <!-- Contact -->
       <section id="contact" class="scroll-mt-24 pt-[clamp(72px,11vw,130px)]">
         <div class="reveal surface grid gap-[clamp(28px,5vw,56px)] p-[clamp(24px,4vw,48px)] lg:grid-cols-2">
           <div>
-            <span class="text-[13px] font-medium tracking-[0.12em] text-accent-light">05</span>
+            <span class="text-[13px] font-medium tracking-[0.12em] text-accent-light">{showResumes ? '05' : '04'}</span>
             <h2
               class="m-0 mt-3 max-w-[14ch] font-serif text-[clamp(34px,6vw,64px)] leading-[1.02] font-normal tracking-[-0.02em] text-fg"
             >
