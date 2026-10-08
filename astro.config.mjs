@@ -7,5 +7,6 @@ export default defineConfig({
   // Change this if you move to a custom domain.
   site: 'https://suryanarayan-portfolio.surya492001.workers.dev',
   integrations: [sitemap()],
+  devToolbar: { enabled: false },
   vite: { plugins: [tailwindcss()] },
 });

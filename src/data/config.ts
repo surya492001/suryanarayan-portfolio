@@ -1,173 +1,87 @@
-// ─────────────────────────────────────────────────────────────
-//  EDIT EVERYTHING HERE. No HTML editing needed.
-// ─────────────────────────────────────────────────────────────
-
+// Portfolio content verified against the supplied Analyst and Developer CVs.
 export const site = {
   name: 'Suryanarayan Satheesh Pillai',
   shortName: 'Suryanarayan',
-  role: 'Full-stack developer & business analyst',
-  availability: 'Open to opportunities',
-  url: 'https://suryanarayan-portfolio.surya492001.workers.dev', // Live on Cloudflare Workers.
+  role: 'Software engineer & business analyst',
+  url: 'https://suryanarayan-portfolio.surya492001.workers.dev',
+  email: 'surya492001@gmail.com',
+  web3formsKey: '86572421-c21a-48ef-8baf-4455c1d24e37',
   linkedin: 'https://www.linkedin.com/in/suryanarayan-pillai-7b66a4194/',
   github: 'https://github.com/surya492001',
-  // TODO: free key from https://web3forms.com (enter your email, it is mailed to you)
-  web3formsKey: '86572421-c21a-48ef-8baf-4455c1d24e37',
 };
-
-export const hero = {
-  // The word wrapped in *asterisks* is rendered in italic accent type.
-  headline: 'Full-stack developer & business analyst building *data-driven* solutions.',
-  intro: `I have built .NET applications end to end, from ASP.NET Core and SQL Server through to
-    production support. Deputy Manager IT in the Business Solutions Group at HDFC Bank.
-    I have also trained as a business analyst: an MBA in Business Analytics from BITS Pilani
-    and a Microsoft PL-300, covering requirements, process analysis and Power BI.`,
-  facts: [
-    { label: 'Based in', value: 'Mumbai, India' },
-    { label: 'Experience', value: '3 years' },
-    { label: 'Certified', value: 'Microsoft PL-300' },
+export const experience = {
+  company: 'HDFC Bank',
+  period: 'Jul 2023 — Sep 2026',
+  role: 'Deputy Manager · IT, Business Solutions Group',
+  location: 'Mumbai, India',
+  points: [
+    'Developed and maintained three enterprise banking applications using ASP.NET Core, C# and SQL Server.',
+    'Led legacy application migration to ASP.NET Core, integrating budgeting, compliance, procurement and reporting into a unified workflow. Improved page response times by 40%.',
+    'Delivered 60+ production deployments across development, UAT support, defect resolution, release management and production support.',
+    'Gathered stakeholder requirements and prepared BRDs and FRDs. Built 12+ automated notification schedulers and workflow monitoring services.',
+    'Designed REST APIs and role-based access modules, optimised SQL queries, and remediated stored XSS and path traversal findings.',
   ],
 };
-
-export const marquee = [
-  'C#',
-  'ASP.NET Core',
-  'SQL Server',
-  'REST APIs',
-  'Power BI',
-  'Microsoft Fabric',
-  'PySpark',
-  'React',
-  'BRD / FRD',
-  'UAT',
-  'Stakeholder management',
-];
-
-export const experience = [
-  {
-    period: 'July 2023 to September 2026',
-    company: 'HDFC Bank',
-    role: 'Deputy Manager IT, Business Solutions Group',
-    location: 'Mumbai, India',
-    lead: `Full-stack developer on three enterprise banking applications, from requirements through
-      to production support.`,
-    points: [
-      'Led the migration of legacy .NET Framework applications to ASP.NET Core, re-architecting the codebase and folding budgeting, compliance, procurement and reporting into one unified workflow.',
-      'Designed RESTful APIs, role-based access modules and optimised SQL Server stored procedures supporting high-volume approval workflows.',
-      'Delivered 60+ production deployments, owning development, UAT support, defect resolution, release management and post-production support.',
-      'Built 12+ automated notification schedulers and workflow monitoring services, removing manual follow-up for operations teams.',
-      'Remediated SAST security findings including stored XSS and path traversal with input validation, output encoding and secure file-handling patterns.',
-      'Gathered requirements directly from business stakeholders, authored BRDs and FRDs, and translated them into technical designs.',
-    ],
-  },
-];
-
-export const education = [
-  {
-    period: '2024 to 2026',
-    org: 'BITS Pilani, Pilani Campus',
-    title: 'MBA, Business Analytics',
-    note: 'CGPA 9.07 / 10',
-  },
-  {
-    period: '2019 to 2023',
-    org: 'NMIMS, Mumbai',
-    title: 'B.Tech, Electronics & Telecommunication',
-    note: 'CGPA 3.62 / 4',
-  },
-];
-
-export const certifications = [
-  'Microsoft Certified: Power BI Data Analyst Associate (PL-300)',
-  'ASP.NET Core Web API Development (Udemy)',
-  'Microsoft Fabric Data Engineering: Real-Time Projects (Udemy)',
-  'Master Java Full Stack: React, Spring Boot, REST APIs, JWT (Udemy, in progress)',
-  'Machine Learning with R (Alison)',
-  'Project Management Foundations (LinkedIn Learning)',
-];
-
 export const projects = [
   {
-    title: 'PICS Attestation Services',
-    tag: 'Live production',
-    stack: 'ASP.NET Core · SQL Server · JavaScript',
-    problem:
-      'A document attestation business was running appointments, submissions and status updates over phone and spreadsheets, with no way for customers to track their own application.',
-    approach:
-      'Designed, built and deployed a full-stack platform covering appointment booking, document submission, application tracking and automated notifications, with role-based modules and dashboards tracking 10 operational KPIs.',
-    impact:
-      'Live in production, serving 400+ customers a month. I own the full lifecycle from requirements through to production support.',
+    title: 'BankOps AI', subtitle: 'An agent for banking operations', category: 'ai', date: 'Oct 2026',
+    stack: ['LangGraph', 'FastAPI', 'PostgreSQL', 'Chroma', 'Streamlit'],
+    description: 'Investigating banking incidents with an AI agent that brings together incident records, SLA status, application health and operational procedures.',
+    detail: 'Built an agent using LLM tool calling and RAG-based SOP retrieval. Added an operations dashboard with investigation evidence, recommendations, audit trails and escalation capabilities. The agent avoids unsupported SOP guidance when no applicable knowledge exists.',
+    outcome: 'Evidence-backed operational recommendations',
+    link: 'https://bankops-ai-agent-for-banking-operations-h8uvg8bdsrctipoxyu8re2.streamlit.app/',
   },
   {
-    title: 'Workflow analytics & SLA prediction',
-    tag: 'MBA capstone',
-    stack: 'Python · Power BI · Process mining',
-    problem:
-      'Banking approval workflows were breaching SLAs, but breaches were only visible after the fact, so escalation was always reactive.',
-    approach:
-      'Analysed banking workflow data to measure turnaround time and locate bottlenecks by approval stage, then trained a Decision Tree classifier to flag cases likely to breach before they did.',
-    impact:
-      '97.5% accuracy on breach prediction, delivered alongside a Power BI dashboard for SLA monitoring and process-mining recommendations for targeted fixes.',
+    title: 'PICS Attestation', subtitle: 'From appointments to application tracking', category: 'development', date: 'Jul 2025',
+    stack: ['Full-stack development', 'Workflow automation', 'KPI dashboards'],
+    description: 'A live customer-facing platform for appointment booking, document submission, application tracking and automated notifications.',
+    detail: 'Designed, developed and deployed the platform, with ongoing maintenance. Gathered requirements, defined process flows and implemented role-based modules and dashboards tracking 10 operational KPIs.',
+    outcome: '400+ customers per month · 10 operational KPIs',
+    link: 'https://picsattestation.in/',
   },
   {
-    title: 'Retail data pipeline on Microsoft Fabric',
-    tag: 'Data engineering',
-    stack: 'Microsoft Fabric · PySpark · Delta · Power BI',
-    problem:
-      'Multi-source retail data arrived dirty and inconsistent, so profitability and inventory questions could not be answered from one place.',
-    approach:
-      'Built an end-to-end Medallion pipeline (Bronze, Silver, Gold) in Microsoft Fabric using PySpark to clean, transform and integrate the sources, including SCD Type 1 and Type 2 handling.',
-    impact:
-      'Gold Delta tables plus a Power BI dashboard covering profitability, inventory turnover and return rates.',
+    title: 'Workflow Analytics', subtitle: 'Predicting SLA breaches in banking', category: 'analytics', date: 'May 2026 · MBA capstone',
+    stack: ['Python', 'Decision Tree', 'Power BI', 'Process mining'],
+    description: 'Analysed banking approval workflows to measure turnaround time, identify bottlenecks and predict cases at risk of breaching SLAs.',
+    detail: 'Built a Decision Tree classifier with 97.5% accuracy, delivered a Power BI dashboard for TAT and SLA monitoring, and used process mining to recommend targeted process improvements.',
+    outcome: '97.5% classification accuracy in the capstone project', link: '',
   },
   {
-    title: 'Nivara Living',
-    tag: 'E-commerce',
-    stack: 'JavaScript · UPI · WhatsApp routing',
-    problem:
-      'A hotel and home linen business needed to sell online without the overhead of a hosted storefront platform.',
-    approach:
-      'Built a full-stack e-commerce platform with cart, checkout, UPI payment integration and WhatsApp order routing, front end written mobile-first.',
-    impact: 'A working storefront with a purchase flow that holds up on a phone.',
+    title: 'Retail Data Pipeline', subtitle: 'From raw data to profitability insights', category: 'analytics', date: 'Jul 2026',
+    stack: ['Microsoft Fabric', 'PySpark', 'Delta tables', 'Power BI'],
+    description: 'An end-to-end Medallion pipeline that cleans, transforms and integrates multi-source retail data in Microsoft Fabric.',
+    detail: 'Built Bronze, Silver and Gold layers using PySpark. Delivered Gold Delta tables and a Power BI dashboard tracking profitability, inventory turnover, return rates and core business KPIs.',
+    outcome: 'Bronze → Silver → Gold → business insights', link: '',
+  },
+  {
+    title: 'Nivara Living', subtitle: 'A mobile-first linen storefront', category: 'development', date: 'Dec 2025',
+    stack: ['JavaScript', 'E-commerce', 'UPI', 'WhatsApp routing'],
+    description: 'A full-stack e-commerce platform for hotel and home linen products, with a responsive, mobile-first purchase flow.',
+    detail: 'Built shopping cart and checkout functionality, integrated UPI payments and WhatsApp order routing, and developed the responsive front end in JavaScript.',
+    outcome: 'Cart, checkout, payments and order routing', link: '',
   },
 ];
-
 export const skills = [
-  {
-    group: 'Development',
-    items: ['C#', 'ASP.NET Core', 'ASP.NET MVC', 'Entity Framework', 'REST APIs', 'JavaScript', 'React', 'Java / Spring Boot'],
-  },
-  {
-    group: 'Data & BI',
-    items: ['SQL Server', 'T-SQL', 'Power BI', 'DAX', 'Microsoft Fabric', 'PySpark', 'ETL pipelines', 'Data modelling'],
-  },
-  {
-    group: 'Business analysis',
-    items: ['Requirements elicitation', 'BRD / FRD', 'User stories', 'Process mapping', 'Gap analysis', 'UAT planning', 'Change requests', 'Stakeholder management'],
-  },
-  {
-    group: 'Practices & tools',
-    items: ['Agile / Scrum', 'N-tier architecture', 'Secure coding (SAST)', 'Git / GitHub', 'Jira', 'Confluence', 'Postman'],
-  },
+  { group: 'Software development', items: ['C# / ASP.NET Core', 'SQL Server / T-SQL', 'REST APIs', 'Entity Framework', 'JavaScript', 'Java / Spring Boot / React'] },
+  { group: 'Data & business analysis', items: ['Power BI / DAX', 'Microsoft Fabric / PySpark', 'Data modelling / ETL', 'Requirements gathering / BRD / FRD', 'Process mapping / Gap analysis', 'UAT / Stakeholder management'] },
+  { group: 'AI & delivery', items: ['Python / FastAPI', 'LangGraph / RAG / LLMs', 'Chroma / PostgreSQL', 'GitHub / Jira / Confluence', 'Agile / Scrum', 'Power Automate / SharePoint'] },
 ];
-
-export const publication = {
-  text: 'Probability of Heart Disease using Various Machine Learning Algorithms, 2023 International Conference on Advanced Computing Technologies and Applications (ICACTA), Mumbai, India.',
-};
-
-// Resume section switch. false hides the section and its header link;
-// set it back to true to show them again.
+export const education = [
+  { period: '2024 — 2026', org: 'BITS Pilani', title: 'MBA, Business Analytics', note: 'CGPA 9.07 / 10' },
+  { period: '2019 — 2023', org: 'NMIMS, Mumbai', title: 'B.Tech, Electronics & Telecommunication', note: 'CGPA 3.62 / 4 · Minor in AI & Machine Learning' },
+];
+export const certifications = [
+  'Microsoft Certified: Power BI Data Analyst Associate (PL-300)',
+  'Master Java Full Stack — Udemy',
+  'ASP.NET Core Web API Development — Udemy',
+  'Microsoft Fabric Data Engineering: Real-Time Projects — Udemy',
+  'Machine Learning with R — Alison',
+  'Project Management Foundations — LinkedIn Learning',
+  'Discover the Art of Prompting — Google, Coursera',
+];
+// Set to true to make the CV download options visible again.
 export const showResumes = false;
-
-// Drop the PDFs into public/ with exactly these filenames.
 export const resumes = [
-  {
-    label: 'Developer',
-    note: '.NET · SQL · Web',
-    file: '/Suryanarayan-Satheesh-Pillai-Developer.pdf',
-  },
-  {
-    label: 'BA / Data Analyst',
-    note: 'Requirements · Power BI · Fabric',
-    file: '/Suryanarayan-Satheesh-Pillai-Analyst.pdf',
-  },
+  { label: 'Developer CV', file: '/Suryanarayan-Satheesh-Pillai-Developer.pdf' },
+  { label: 'Analyst CV', file: '/Suryanarayan-Satheesh-Pillai-Analyst.pdf' },
 ];
