@@ -15,7 +15,7 @@ export const experience = {
   role: 'Deputy Manager · IT, Business Solutions Group',
   location: 'Mumbai, India',
   points: [
-    'Developed and maintained three enterprise banking applications using ASP.NET Core, C# and SQL Server.',
+    'Developed and maintained 3 enterprise banking applications using C#, ASP.NET Core, Rest API, React, and SQL Server, including recruitment automation and document approval workflows.',
     'Led legacy application migration to ASP.NET Core, integrating budgeting, compliance, procurement and reporting into a unified workflow. Improved page response times by 40%.',
     'Delivered 60+ production deployments across development, UAT support, defect resolution, release management and production support.',
     'Gathered stakeholder requirements and prepared BRDs and FRDs. Built 12+ automated notification schedulers and workflow monitoring services.',
