@@ -62,7 +62,7 @@ export const projects = [
   },
 ];
 export const skills = [
-  { group: 'Software development', items: ['C# / ASP.NET Core', 'SQL Server / T-SQL', 'REST APIs', 'Entity Framework', 'JavaScript', 'Node.js', 'Java / Spring Boot / React'] },
+  { group: 'Software development', items: ['C# / ASP.NET Core', 'SQL Server / T-SQL', 'REST APIs', 'Entity Framework', 'JavaScript', 'Node.js', 'Next.js', 'Java / Spring Boot / React'] },
   { group: 'Data & business analysis', items: ['Power BI / DAX', 'Microsoft Fabric / PySpark', 'Data modelling / ETL', 'Requirements gathering / BRD / FRD', 'Process mapping / Gap analysis', 'UAT / Stakeholder management'] },
   { group: 'AI & delivery', items: ['Python / FastAPI', 'LangGraph / RAG / LLMs', 'Chroma / PostgreSQL', 'GitHub / Jira / Confluence', 'Agile / Scrum', 'Power Automate / SharePoint'] },
 ];
